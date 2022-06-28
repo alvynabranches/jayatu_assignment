@@ -8,7 +8,7 @@ NUM_WORKERS = 4
 MAX_LEN = 8
 TRAIN_BATCH_SIZE = 4
 VALID_BATCH_SIZE = 1
-START = 7
+START = 20
 EPOCHS = 20
 BERT_PATH = "bert-base-uncased"
 TOKENIZER = transformers.BertTokenizer.from_pretrained(BERT_PATH, do_lower_case=True)
