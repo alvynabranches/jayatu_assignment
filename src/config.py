@@ -16,7 +16,9 @@ TOKENIZER = transformers.BertTokenizer.from_pretrained(BERT_PATH, do_lower_case=
 SAVE = True
 LOAD = True
 ENCODER_PATH = os.path.join(os.path.dirname(__file__), "../encoder.pkl")
+
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "../model_{}.pt")
+VAL_MODEL_PATH = os.path.join(os.path.dirname(__file__), "../model_11.pt")
 
 TRAINING_FILE = os.path.join(os.path.dirname(__file__), "../training_tokens_modified.txt")
 UNIQUE_TOKENS_FILE = os.path.join(os.path.dirname(__file__), "../training_tokens_unique.txt")

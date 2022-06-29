@@ -13,7 +13,7 @@ filterwarnings("ignore")
 def infer():
     encoder = pickle.load(open(config.ENCODER_PATH, "rb"))
     model = BERTBaseUncased(encoder.categories_[0].shape[0])
-    model_state_dict = torch.load(config.MODEL_PATH.format(11))["model"]
+    model_state_dict = torch.load(config.VAL_MODEL_PATH.format(11))["model"]
     model.load_state_dict(model_state_dict)
     model.to(config.DEVICE)
     

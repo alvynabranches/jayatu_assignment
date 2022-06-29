@@ -58,8 +58,8 @@ def run(load_model=False):
     )
     
     if config.LOAD:
-        if os.path.isfile(config.MODEL_PATH):
-            state_dict = torch.load(config.MODEL_PATH.format(5))
+        if os.path.isfile(config.VAL_MODEL_PATH):
+            state_dict = torch.load(config.VAL_MODEL_PATH)
             model_state_dict = state_dict["model"]
             optimizer_state_dict = state_dict["optimizer"]
             model.load_state_dict(model_state_dict)
