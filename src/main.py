@@ -18,7 +18,7 @@ def infer():
     model.to(config.DEVICE)
     
     inference_data = InferenceDataset(config.CORRUPT_TOKENS_FILE)
-    inference_data_loader = torch.utils.data.DataLoader(inference_data, config.TRAIN_BATCH_SIZE, num_workers=config.NUM_WORKERS)
+    inference_data_loader = torch.utils.data.DataLoader(inference_data, config.VALID_BATCH_SIZE, num_workers=config.NUM_WORKERS)
     
     # print(ids.shape, mask.shape, token_type_ids.shape)
     # sys.exit()

@@ -1,6 +1,5 @@
 import os
 import pickle
-import sys
 from sklearn.preprocessing import OneHotEncoder
 import config
 import dataset
